@@ -1,4 +1,51 @@
 Aula do dia 12_03_2025
 
--- Comando Select
--- Comando Update
+-- Selecionar tabelas
+-- Selecionar medicos
+
+select * from medicos;
+
+select nome, idade  -- selecionar linhas
+from medicos;
+
+select * 
+from medicos 
+where codm = 3;  -- selecionar colunas
+
+select *
+from medicos
+where idade > 30 and especialidade = 'pediatria';
+
+select *
+from medicos
+where idade > 30 or especialidade = 'pediatria';
+
+select count(*)
+from medicos;
+
+select min(idade) from medicos;
+
+select max(idade) from medicos;
+
+select avg(idade) from medicos;
+
+select sum(idade) from medicos;
+
+select especialidade from medicos;
+
+select distinct especialidade from medicos;
+
+select idade from medicos;
+
+select idade from medicos order by idade;
+
+select idade from medicos order by  idade asc;
+
+select idade from medicos order by  idade desc;
+
+
+
+
+
+
+
